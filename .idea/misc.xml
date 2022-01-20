@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/drawable/bottom_nav_color.xml" value="0.1" />
         <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/layout/activity_main.xml" value="0.10144927536231885" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/layout/fragment_chatbot.xml" value="0.1" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/layout/fragment_community.xml" value="0.1" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/layout/fragment_relaxation.xml" value="0.1" />
         <entry key="..\:/Users/apurva shukla/AndroidStudioProjects/Cureya/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
       </map>
     </option>
