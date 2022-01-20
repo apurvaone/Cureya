@@ -18,6 +18,9 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 
 
+
+
+
 class MainActivity : AppCompatActivity() {
 
  private lateinit var binding: ActivityMainBinding
@@ -81,6 +84,11 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
 
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return (Navigation.findNavController(this, R.id.nav_host_fragment_activity_main).navigateUp()
+                || super.onSupportNavigateUp())
     }
 
 
