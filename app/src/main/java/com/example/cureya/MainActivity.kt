@@ -2,12 +2,21 @@ package com.example.cureya
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.cureya.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+import android.app.Activity
+
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,6 +60,27 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.top_menu,menu)
+
+        return true
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.aboutUsfragment -> {
+                val navController: NavController =
+                    Navigation.findNavController(this, R.id.nav_host_fragment_activity_main)
+                navController.navigateUp()
+                navController.navigate(R.id.aboutUsFragment)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+
+        }
     }
 
 
