@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutUsFragment">
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="284dp"
+        android:layout_height="126dp"
+        android:layout_margin="60dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/img1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/aboutUsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/about_us"
+        android:layout_marginTop="20dp"
+
+        android:textSize="34sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoView" />
+
+    <TextView
+        android:id="@+id/aboutusText"
+        android:layout_width="335dp"
+        android:layout_height="230dp"
+        android:text="@string/aboutus"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsHeading" />
+
+    <ImageView
+        android:layout_width="259dp"
+        android:layout_height="169dp"
+        android:padding="20dp"
+        android:id="@+id/madeinindia_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_img_2"
+        app:layout_constraintTop_toBottomOf="@+id/aboutusText"
+
+        tools:layout_editor_absoluteX="72dp" />
+
+    <TextView
+        android:layout_width="228dp"
+        android:layout_height="38dp"
+        android:text="@string/madeinindia"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/madeinindia_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPr">#40C6A6</color>
     <color name="colorPrimaryDark">#40C6A6</color>
-
+    <color name="pd">#708B94</color>
 
 </resources>
